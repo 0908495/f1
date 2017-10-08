@@ -5,10 +5,10 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Formula Info</div>
+                    <div class="panel-heading">Tracks</div>
 
                     <div class="panel-body">
-                        Welcome to Formula Info, use the navigation menu on the top to go to different pages, you need to be logged in to be able to visit those pages. So log in or create an account using the buttons in the top right. Enjoy your stay!
+                        Look up information about the tracks that are on the calendar of 2017.
                     </div>
                 </div>
             </div>

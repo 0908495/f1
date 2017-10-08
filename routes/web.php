@@ -22,6 +22,23 @@ Route::get('register', function () {
 Route::get('login', function () {
     return view('login');
 });
+
+Route::get('views/blog', function () {
+    return view('blog');
+})->name('blog');
+
+Route::get('views/drivers', function () {
+    return view('drivers');
+})->name('drivers');
+
+Route::get('views/tracks', function () {
+    return view('tracks');
+})->name('tracks');
+
+Route::get('views/tyres', function () {
+    return view('tyres');
+})->name('tyres');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

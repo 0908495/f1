@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Formula Info') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -29,14 +29,19 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        {{ config('app.name', 'Formula Info') }}
                     </a>
                 </div>
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        @if (Auth::guest())
+                            <li><a href="{{ route('blog') }}">Blog</a></li>
+                            <li><a href="{{ route('drivers') }}">Drivers</a></li>
+                            <li><a href="{{ route('tracks') }}">Tracks</a></li>
+                            <li><a href="{{ route('tyres') }}">Tyres</a></li>
+                        @endif
                     </ul>
 
                     <!-- Right Side Of Navbar -->

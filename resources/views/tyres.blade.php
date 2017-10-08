@@ -5,10 +5,10 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Formula Info</div>
+                    <div class="panel-heading">Tyres</div>
 
                     <div class="panel-body">
-                        Welcome to Formula Info, use the navigation menu on the top to go to different pages, you need to be logged in to be able to visit those pages. So log in or create an account using the buttons in the top right. Enjoy your stay!
+                        The F1 tyres of the current season are provided by Pirelli. Pirelli offers a total of 7 different compounds.
                     </div>
                 </div>
             </div>
