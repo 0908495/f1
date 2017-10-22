@@ -27,9 +27,12 @@ Route::get('views/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('views/drivers', function () {
-    return view('drivers');
-})->name('drivers');
+Route::get('views/drivers', 'DriversController@index')->name('drivers');
+
+//Route::get('views/drivers', function () {
+//    return view('drivers');
+//})->name('drivers');
+
 
 Route::get('views/tracks', function () {
     return view('tracks');
