@@ -29,18 +29,9 @@ Route::get('views/blog', function () {
 
 Route::get('views/drivers', 'DriversController@index')->name('drivers');
 
-//Route::get('views/drivers', function () {
-//    return view('drivers');
-//})->name('drivers');
+Route::get('views/tyres', 'TyresController@index')->name('tyres');
 
-
-Route::get('views/tracks', function () {
-    return view('tracks');
-})->name('tracks');
-
-Route::get('views/tyres', function () {
-    return view('tyres');
-})->name('tyres');
+Route::get('views/tracks', 'TracksController@index')->name('tracks');
 
 Auth::routes();
 
