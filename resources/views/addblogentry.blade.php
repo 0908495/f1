@@ -5,10 +5,13 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Formula Info</div>
+                    <div class="panel-heading">Welcome, write your blog entry down below</div>
 
                     <div class="panel-body">
-                        Welcome to Formula Info! See the navigation menu on the top to go to different pages. You need to be logged in to be able to visit those pages. So log in or create an account using the buttons in the top right. Enjoy your stay!
+                        <form method="post">
+                            <textarea name="blog" rows="10" cols="30">Your blog post</textarea>
+                            <input type="submit" name="submit" value="Submit">
+                        </form>
                     </div>
                 </div>
             </div>

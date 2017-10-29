@@ -23,9 +23,7 @@ Route::get('login', function () {
     return view('login');
 });
 
-Route::get('views/blog', function () {
-    return view('blog');
-})->name('blog');
+Route::get('views/blogs', 'BlogsController@index')->name('blogs');
 
 Route::get('views/drivers', 'DriversController@index')->name('drivers');
 
@@ -36,3 +34,7 @@ Route::get('views/tracks', 'TracksController@index')->name('tracks');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/reject', 'RejectController@index')->name('reject');
+
+Route::get('/addblogentry', 'AddBlogController@index')->name('addblogentry');

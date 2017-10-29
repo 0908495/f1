@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTyresTable extends Migration
+class CreateBlogsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateTyresTable extends Migration
      */
     public function up()
     {
-        Schema::create('tracks', function (Blueprint $table) {
-            $table->string('name');
-            $table->string('country');
-            $table->integer('length');
+        Schema::create('blogs', function (Blueprint $table) {
+            $table->increments('id');
+            $table->text('text');
+            $table->string('team');
         });
     }
 
@@ -27,6 +27,6 @@ class CreateTyresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tyres');
+        Schema::dropIfExists('blogs');
     }
 }

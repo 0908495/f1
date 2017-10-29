@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<link href="{{ asset('css/tyres.css') }}" rel="stylesheet">
 
 @section('content')
     <div class="container">

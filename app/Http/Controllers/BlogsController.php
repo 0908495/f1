@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Driver;
+use App\Blog;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Input;
 
-class DriversController extends Controller
+class BlogsController extends Controller
 {
     public function __construct()
     {
@@ -18,8 +16,8 @@ class DriversController extends Controller
 
     public function index()
     {
-        $drivers = Driver::all();
+        $blogs = Blog::all();
 
-        return view('/drivers', compact('drivers'));
+        return view('/blogs', compact('blogs'));
     }
 }

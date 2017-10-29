@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class TyresController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         $tyres = Tyre::all();

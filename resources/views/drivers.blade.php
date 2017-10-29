@@ -4,7 +4,14 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Here is an overview of the all the drivers that have been on the grid this year</div>
+                    <div class="panel-heading">
+                        <p>Here is an overview of the all the drivers that have been on the grid this year</p>
+                        <p>Filter:</p>
+                        <form method="GET">
+                            <input type="checkbox" name="mercedes" value="1">
+                        </form>
+                        <p></p>
+                    </div>
                     <div class="panel-body">
                         <div class="col-md-8">
                                 <table width="100%">
